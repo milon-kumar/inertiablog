@@ -1,6 +1,6 @@
 <template>
-    <div class="relative pt-6 px-4 sm:px-6 lg:px-8 ">
-        <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
+    <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+        <nav class="relative flex items-center justify-between sm:h-10 lg:justify-between" aria-label="Global">
             <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                 <div class="flex items-center justify-between w-full md:w-auto">
                     <router-link to="/">
@@ -18,32 +18,14 @@
                     </div>
                 </div>
             </div>
-            <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+            <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8 ">
+                <router-link to="/" class="font-medium text-gray-500 hover:text-gray-900">Home</router-link>
                 <router-link to="/about" class="font-medium text-gray-500 hover:text-gray-900">About</router-link>
-
-
-                <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Marketplace</a>
-
-                <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Company</a>
-
-                <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Log in</a>
+<!--                <router-link to="/argentina" class="font-medium text-gray-500 hover:text-gray-900">Argentina</router-link>-->
+<!--                <router-link to="/mypage" class="font-medium text-gray-500 hover:text-gray-900">My Page</router-link>-->
+                <router-link to="/myabout" class="font-medium text-gray-500 hover:text-gray-900">My About</router-link>
+                <router-link to="/mycontract" class="font-medium text-gray-500 hover:text-gray-900">My Contract</router-link>
             </div>
         </nav>
     </div>
 </template>
-
-<script>
-    import {ref} from "@vue/reactivity";
-
-    let showWhiteBackground = ref(false);
-    document.addEventListener("scroll",function () {
-        let bodyTopPosition = document.body.getBoundingClientRect().top;
-
-        if (bodyTopPosition < -150){
-            showWhiteBackground = true;
-        }else {
-            showWhiteBackground = false;
-
-        }
-    });
-</script>

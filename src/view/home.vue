@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div class="home mt-10">
+        <div class="home mt-10 my-16 border border-sky-2">
             <div class="destinations">
                 <router-link class="float-left mx-5" v-for="item in destinations" :key="item.id" :to="item.slug">
                     <h2 >{{item.name}}</h2>
