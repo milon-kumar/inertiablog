@@ -10,10 +10,6 @@
             </div>
         </div>
     </div>
-
-    <div class="container mx-auto py-8 sm:py-12 px-4 sm:px-0">
-
-    </div>
 </template>
 
 <script>

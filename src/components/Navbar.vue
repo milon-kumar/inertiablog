@@ -25,6 +25,7 @@
 <!--                <router-link to="/mypage" class="font-medium text-gray-500 hover:text-gray-900">My Page</router-link>-->
                 <router-link to="/myabout" class="font-medium text-gray-500 hover:text-gray-900">My About</router-link>
                 <router-link to="/mycontract" class="font-medium text-gray-500 hover:text-gray-900">My Contract</router-link>
+                <router-link to="/myarticals" class="font-medium text-gray-500 hover:text-gray-900">My Articals</router-link>
             </div>
         </nav>
     </div>

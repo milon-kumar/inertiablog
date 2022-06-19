@@ -38,6 +38,11 @@ const router =createRouter({
             path:"/mycontract",
             name:"MyContract",
             component:()=>import('../src/view/contract/index.vue'),
+        },
+        {
+            path:"/myarticals",
+            name:"MyArticals",
+            component:()=>import('../src/view/artical/index.vue'),
         }
     ]
 });

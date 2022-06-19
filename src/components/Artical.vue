@@ -32,3 +32,20 @@
         </div>
     </div>
 </template>
+<script>
+    import computed from "vue"
+    export  default {
+
+
+        props:{
+            layout:{
+                type:String,
+                default:"list",
+            }
+        },
+
+        setup(props){
+            let isGrid = computed
+        },
+    }
+</script>

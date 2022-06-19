@@ -2,10 +2,8 @@
 
 
     <div class="space-y-8 sm:space-y-16">
-        <Artical/>
-        <Artical/>
-        <Artical/>
-        <Artical/>
+        <Artical :layout="layout"/>
+        <Artical :layout="layout"/>
 
     </div>
 
@@ -25,6 +23,13 @@
     import Artical from "./Artical.vue";
 
     export default {
+
+        props:{
+            layout:{
+              type:String,
+              default:"list",
+          }
+        },
 
         components:{
             Artical,
